@@ -1,6 +1,6 @@
 {
   "name": "use-queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility to add a queue via hooks to your React application.",
   "homepage": "https://github.com/jonstuebe/use-queue#readme",
   "license": "MIT",
