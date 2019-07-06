@@ -1,6 +1,23 @@
 {
   "name": "use-queue",
   "version": "0.1.0",
+  "description": "A utility to add a queue via hooks to your React application.",
+  "homepage": "https://github.com/jonstuebe/use-queue#readme",
+  "license": "MIT",
+  "private": false,
+  "author": "Jon Stuebe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonstuebe/use-queue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonstuebe/use-queue/issues"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "queue"
+  ],
   "main": "dist/index.js",
   "module": "dist/use-queue.esm.js",
   "typings": "dist/index.d.ts",
