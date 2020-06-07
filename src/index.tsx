@@ -3,7 +3,9 @@ import { reducer, ReducerStateType } from "./reducer";
 
 type ProcessFnType<T> = (item: T, done: () => void) => void;
 
-const useQueue = <T extends unknown>(process: ProcessFnType<T>) => {
+const useQueue = <T extends unknown>(
+  process: ProcessFnType<T>
+): [T[], (payload: T) => void] => {
   const initialState: ReducerStateType = {
     isProcessing: false,
     queue: [],
