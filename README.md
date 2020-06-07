@@ -37,3 +37,25 @@ function App() {
   );
 }
 ```
+
+```typescript
+import useQueue from "use-queue";
+
+function process(item: string, done: () => void) {
+  setTimeout(() => {
+    console.log("value of current queue item ==>", item);
+    done(); // we're finished processing the item and ready to remove it
+  }, 1000);
+}
+
+export function App() {
+  const [queue, add] = useQueue<string>(process);
+
+  return (
+    <div>
+      <code>{JSON.stringify(queue, null, 2)}</code>
+      <button onClick={() => add("Item Value Goes Here")}>Add To Queue</button>
+    </div>
+  );
+}
+```
